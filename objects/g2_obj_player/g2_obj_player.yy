@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oSolid",
-  "eventList":[],
+  "%Name":"g2_obj_player",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oSolid",
+  "name":"g2_obj_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"G2_4DirWithObstacles",
-    "path":"folders/G2_4DirWithObstacles.yy",
+    "name":"G2_4DirectionsWithObstacles",
+    "path":"folders/G2_4DirectionsWithObstacles.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWall",
-    "path":"sprites/sWall/sWall.yy",
+    "name":"spr_ball1",
+    "path":"sprites/spr_ball1/spr_ball1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

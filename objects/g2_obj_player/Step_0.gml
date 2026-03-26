@@ -5,9 +5,9 @@ getControls()
 
 xSpeed = horizontal * moveSpeed
 
-if place_meeting( x + xSpeed, y, oSolid ){
+if place_meeting( x + xSpeed, y, g2_obj_solid ){
 	xSpeed = 0
-	while( ! place_meeting( x + xSpeed + delta * horizontal, y, oSolid ))
+	while( ! place_meeting( x + xSpeed + delta * horizontal, y, g2_obj_solid ))
 		xSpeed += delta * horizontal
 }
 
@@ -15,9 +15,9 @@ hspeed = xSpeed
 
 ySpeed = vertical * moveSpeed
 
-if place_meeting( x, y + ySpeed, oSolid ){
+if place_meeting( x, y + ySpeed, g2_obj_solid ){
 	ySpeed = 0
-	while( ! place_meeting( x, y + ySpeed + delta * vertical, oSolid ))
+	while( ! place_meeting( x, y + ySpeed + delta * vertical, g2_obj_solid ))
 		ySpeed += delta * vertical
 }
 
