@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"G1_FourDirections","folderPath":"folders/G1_FourDirections.yy","name":"G1_FourDirections","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"G2_4DirWithObstacles","folderPath":"folders/G2_4DirWithObstacles.yy","name":"G2_4DirWithObstacles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
@@ -23,12 +24,17 @@
   "name":"EssentialRepository",
   "resources":[
     {"id":{"name":"g1_obj_player","path":"objects/g1_obj_player/g1_obj_player.yy",},},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"oSolid","path":"objects/oSolid/oSolid.yy",},},
     {"id":{"name":"g1_rm_main","path":"rooms/g1_rm_main/g1_rm_main.yy",},},
+    {"id":{"name":"rmGame2","path":"rooms/rmGame2/rmGame2.yy",},},
     {"id":{"name":"spr_ball1","path":"sprites/spr_ball1/spr_ball1.yy",},},
+    {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rmGame2","path":"rooms/rmGame2/rmGame2.yy",},},
     {"roomId":{"name":"g1_rm_main","path":"rooms/g1_rm_main/g1_rm_main.yy",},},
   ],
   "templateType":"game",
