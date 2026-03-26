@@ -15,6 +15,7 @@ x += xSpeed
 
 if onGround() {
 	canJump = true
+	canDoubleJump = true
 	groundMemory = groundMemoryMax
 }
 else if groundMemory > 0 {
@@ -22,10 +23,24 @@ else if groundMemory > 0 {
 }
 else
 	canJump = false
-	
-if jumpKeyPressed and canJump {
-	canJump = false
-	jumpHeld = jumpHoldMax
+
+if doubleJump {	
+	if jumpKeyPressed {
+		if canJump {
+			canJump = false
+			jumpHeld = jumpHoldMax
+		}
+		else if canDoubleJump{
+			canDoubleJump = false
+			jumpHeld = jumpHoldMax - 10
+		}
+	}
+}
+else {
+	if jumpKeyPressed and canJump {
+		canJump = false
+		jumpHeld = jumpHoldMax
+	}
 }
 
 if ! jumpKey or atCeiling()

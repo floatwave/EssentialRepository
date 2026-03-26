@@ -17,6 +17,8 @@ jumpSpeed = -6.5
 jumpHoldMax = 30
 
 canJump = false
+doubleJump = false
+canDoubleJump = false
 
 groundMemoryMax = 8
 groundMemory = 0
@@ -31,6 +33,7 @@ getControls = function(){
 	jumpKeyPressed = keyboard_check_pressed( vk_space )
 	jumpKey = keyboard_check( vk_space )
 	move = rightKey - leftKey
+	doubleJump = keyboard_check_pressed( ord( "X" )) xor doubleJump
 }
 
 onGround = function(){
