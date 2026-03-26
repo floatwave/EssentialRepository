@@ -8,8 +8,11 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
-  "Folders":[],
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"G1_FourDirections","folderPath":"folders/G1_FourDirections.yy","name":"G1_FourDirections","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
@@ -19,12 +22,14 @@
   },
   "name":"EssentialRepository",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"g1_obj_player","path":"objects/g1_obj_player/g1_obj_player.yy",},},
+    {"id":{"name":"g1_rm_main","path":"rooms/g1_rm_main/g1_rm_main.yy",},},
+    {"id":{"name":"spr_ball1","path":"sprites/spr_ball1/spr_ball1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"g1_rm_main","path":"rooms/g1_rm_main/g1_rm_main.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
