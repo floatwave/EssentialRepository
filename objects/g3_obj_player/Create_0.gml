@@ -19,21 +19,23 @@ jumpHoldMax = 30
 canJump = false
 doubleJump = false
 canDoubleJump = false
+bouncy = false
 
-groundMemoryMax = 8
-groundMemory = 0
+coyoteGround = 0
+coyoteGroundMax = 8
+coyoteJump = 0
+coyoteJumpMax = 8
 
 
 getControls = function(){
 
 	rightKey = keyboard_check( vk_right ) or keyboard_check( ord( "D" ))
 	leftKey = keyboard_check( vk_left ) or keyboard_check( ord( "A" ))
-	upKey = keyboard_check( vk_up ) or keyboard_check( ord( "W" ))
-	downKey = keyboard_check( vk_down ) or keyboard_check( ord( "S" ))
-	jumpKeyPressed = keyboard_check_pressed( vk_space )
-	jumpKey = keyboard_check( vk_space )
+	jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( vk_up ) or keyboard_check_pressed( ord( "W" ))
+	jumpKey = keyboard_check( vk_space ) or keyboard_check( vk_up ) or keyboard_check( ord( "W" ))
 	move = rightKey - leftKey
 	doubleJump = keyboard_check_pressed( ord( "X" )) xor doubleJump
+	bouncy = keyboard_check_pressed( ord( "Z" )) xor bouncy
 }
 
 onGround = function(){
