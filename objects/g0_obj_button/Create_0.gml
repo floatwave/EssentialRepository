@@ -5,4 +5,3 @@ image_xscale = 2
 
 game = noone
 gameId = 0
-gameDesc = ""
