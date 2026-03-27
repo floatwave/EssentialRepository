@@ -10,10 +10,10 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"G0_MainHub","folderPath":"folders/G0_MainHub.yy","name":"G0_MainHub","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"G1_FourDirections","folderPath":"folders/G1_FourDirections.yy","name":"G1_FourDirections","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"G2_4DirectionsWithObstacles","folderPath":"folders/G2_4DirectionsWithObstacles.yy","name":"G2_4DirectionsWithObstacles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"G3_Platformer","folderPath":"folders/G3_Platformer.yy","name":"G3_Platformer","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"G0_MainHub","folderPath":"folders/G0_MainHub.yy","name":"G0_MainHub","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
