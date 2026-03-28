@@ -12,9 +12,6 @@ if place_meeting( x + xSpeed, y, g3_obj_solid ){
 }
 x += xSpeed
 
-if bouncy
-	jumpKeyPressed = jumpKey
-
 if onGround() {
 	canJump = true
 	canDoubleJump = true
@@ -34,29 +31,21 @@ else if coyoteJump > 0
 if ! jumpKey or atCeiling()
 	jumpHeld = 0
 
-if doubleJump {	
-	if jumpKeyPressed or coyoteJump > 0 {
-		if canJump {
-			coyoteJump = 0
-			canJump = false
-			jumpHeld = jumpHoldMax
-		}
-		else if canDoubleJump{
-			coyoteJump = 0
-			canDoubleJump = false
-			jumpHeld = jumpHoldMax - 10
-		}
-	}
-}
-else {
-	if ( jumpKeyPressed or coyoteJump > 0 ) and canJump {
+
+if jumpKeyPressed or coyoteJump > 0 or ( bouncy and jumpKey ) {
+	if canJump {
 		coyoteJump = 0
 		canJump = false
 		jumpHeld = jumpHoldMax
 	}
+	else if doubleJump and canDoubleJump and jumpKeyPressed {
+		coyoteJump = 0
+		canDoubleJump = false
+		jumpHeld = jumpHoldMax - 10
+	}
 }
 
-	
+
 if jumpHeld > 0 {
 	ySpeed = jumpSpeed
 	jumpHeld --
