@@ -31,7 +31,6 @@ else if coyoteJump > 0
 if ! jumpKey or atCeiling()
 	jumpHeld = 0
 
-
 if jumpKeyPressed or coyoteJump > 0 or ( bouncy and jumpKey ) {
 	if canJump {
 		coyoteJump = 0
@@ -45,9 +44,8 @@ if jumpKeyPressed or coyoteJump > 0 or ( bouncy and jumpKey ) {
 	}
 }
 
-
 if jumpHeld > 0 {
-	ySpeed = jumpSpeed
+	ySpeed += jumpSpeed
 	jumpHeld --
 }
 

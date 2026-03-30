@@ -4,7 +4,8 @@
 rooms = [
 	{ name : g1_rm_main, desc : "Simple 2D" },
 	{ name : g2_rm_main, desc : "2D w/ walls" },
-	{ name : g3_rm_main, desc : "Platformer" }
+	{ name : g3_rm_main, desc : "Platformer" },
+	{ name : g8_rm_main, desc : "Dialogue" }
 ]
 
 cols = 5

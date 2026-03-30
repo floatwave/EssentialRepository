@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"g8_sc_dialogue",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"g8_sc_dialogue",
+  "parent":{
+    "name":"G8_Dialogue",
+    "path":"folders/G8_Dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
