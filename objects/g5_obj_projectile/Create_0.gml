@@ -12,3 +12,5 @@ time = 0
 grav = 0.9
 
 delta = .5
+
+image_blend = make_color_hsv( ( time * 10 ) % 255, 255, 255 )
