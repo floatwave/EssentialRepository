@@ -45,7 +45,7 @@ if jumpKeyPressed or coyoteJump > 0 or ( bouncy and jumpKey ) {
 }
 
 if jumpHeld > 0 {
-	ySpeed += jumpSpeed
+	ySpeed = jumpSpeed
 	jumpHeld --
 }
 
@@ -55,9 +55,11 @@ if jumpHeld == 0 {
 	ySpeed += grav
 }
 
+ySpeed = min( ySpeed, termVel )
+
 if place_meeting( x, y + ySpeed, g3_obj_solid ){
 		while( ! place_meeting( x, y + delta * sign( ySpeed ), g3_obj_solid ))
 			y += delta * sign( ySpeed )
 		ySpeed = 0
 }
-y += min( ySpeed, termVel )
+y += ySpeed
