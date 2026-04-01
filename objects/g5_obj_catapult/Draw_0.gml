@@ -20,6 +20,9 @@ if charging {
 		
 		draw_set_colour( c_gray )
 		draw_circle( x + dX, y - dY, 2, false )
+		
+		if place_meeting( x + dX, y - dY, g5_obj_solid )
+			break
 	}
 }
 
